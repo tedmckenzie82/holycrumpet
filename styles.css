@@ -1,0 +1,406 @@
+* {
+    box-sizing: content-box;
+}
+
+body {
+    overflow-x: hidden;
+    color: #777;
+    text-align: justify;
+    font-size: 90%;
+}
+
+body {
+    font-family: 'Slabo 27px', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Slabo 27px', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #555;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+p {
+    margin: 0 0 10px 0;
+    line-height: 1.75em;
+}
+
+p.first::first-letter {
+    float: left;
+    font-size: 3.5em;
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-left: 3px;
+}
+
+a {
+    color: #555;
+}
+
+.split-content:after, .sample:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.split-content .left-panel {
+    width: 48%;
+    float: left;
+    margin-right: 1%;
+}
+
+.split-content .right-panel {
+    width: 48%;
+    float: right;
+    margin-left: 1%;
+}
+
+.split-content.split-1-2 .left-panel {
+    width: 40%;
+}
+
+.split-content.split-1-2 .right-panel {
+    width: 56%;
+}
+
+#logo {
+    width: 175px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+nav {
+    font-size: 1.25em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    transition: 250ms all;
+}
+
+nav a:hover, nav a:focus {
+    text-decoration: underline;
+}
+
+header.top-level, section.top-level, footer.top-level {
+    width: 40vw;
+    padding: 40px 30vw;
+    max-width: 100%;
+}
+
+section.odd, footer {
+    background-color: #FAFAFA;
+}
+
+.samples {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.samples .sample {
+    margin: 25px 15px;
+}
+
+.samples .sample h3 {
+    margin-bottom: 15px;
+}
+
+.samples .sample .description {
+    overflow: hidden;
+}
+
+.samples .odd h3 {
+    text-align: left;
+}
+
+.samples .odd img {
+    float: left;
+    margin-right: 3%;
+}
+
+.samples .even h3 {
+    text-align: right;
+}
+
+.samples .even img {
+    float: right;
+    margin-left: 3%;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.samples img {
+    width: 70%;
+}
+
+form {
+    text-align: left;
+}
+
+textarea {
+    resize: none;
+}
+
+form input, form textarea {
+    width: 90%;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    padding: 10px 5%;
+    transition: 250ms all;
+    outline: none;
+}
+
+form input:hover,
+form input:focus,
+form textarea:hover,
+form textarea:focus {
+    background-color: #F0F0F0;
+}
+
+form .message {
+    display: none;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    width: 90%;
+    padding: 10px 5%;
+    background-color: #F0F0F0;
+    color: #777;
+    border: none;
+    text-transform: uppercase;
+    transition: 250ms all;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #555;
+    color: #FFF;
+}
+
+table {
+    width: 100%;
+    text-align: right;
+}
+
+table td {
+    height: 50px;
+}
+
+table td.quantity {
+    text-align: left;
+    padding: 0 5px 0 0;
+}
+
+table td.price {
+    width: 50px;
+}
+
+table .type, table .price {
+    font-size: 0.8em;
+}
+
+table .total {
+    font-weight: bold;
+}
+
+input[type="number"] {
+    padding: 10px;
+    width: 50px;
+}
+
+form input, form textarea, form button {
+    border-radius: 4px;
+}
+
+form .date-time-form-input input[type="date"] {
+    width: 49%;
+}
+
+form .date-time-form-input input[type="time"] {
+    float: right;
+    width: 29%;
+}
+
+form .address-form-input .street-no {
+    float: left;
+    width: 5%;
+}
+
+form .address-form-input .street {
+    float: right;
+    width: 73%;
+}
+
+form .address-form-input .suburb {
+    float: left;
+    width: 63%;
+}
+
+form .address-form-input .postcode {
+    float: right;
+    width: 15%;
+}
+
+.social {
+    margin-bottom: 10px;
+}
+
+.social a {
+    margin-right: 5px;
+    color: #999;
+    transition: 250ms all;
+}
+
+.social a:hover, .social a:focus {
+    color: grey;
+}
+
+footer {
+    color: #999;
+}
+
+.contact-details {
+    color: #555;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-details li {
+    margin-bottom: 10px;
+}
+
+.contact-details i {
+    margin-right: 5px;
+}
+
+.disable-orders .right-panel {
+    display: none;
+}
+
+.disable-orders .split-1-2 .left-panel {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+}
+
+.disable-orders .contact-details {
+    text-align: center;
+}
+
+.disable-orders .contact-details li:first-child {
+    display: none;
+}
+
+@media screen and (max-width: 1550px) {
+    header.top-level, section.top-level, footer.top-level {
+        width: 50vw;
+        padding: 40px 25vw;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    header.top-level, section.top-level, footer.top-level {
+        width: 90vw;
+        padding: 40px 5vw;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header.top-level {
+        padding: 10px 5vw;
+    }
+    
+    section.top-level, footer.top-level {
+        padding: 20px 5vw;
+    }
+
+    header.top-level, section.top-level {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .split-content .left-panel, .split-content.split-1-2 .left-panel {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+
+    .split-content .right-panel, .split-content.split-1-2 .right-panel {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+    }
+
+    #order .left-panel {
+        margin-bottom: 20px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 0 0 10px 0;
+    }
+    
+    footer {
+        text-align: center;
+    }
+    
+    .samples .odd img {
+        float: none;
+        margin-right: 0;
+    }
+
+    .samples .even img {
+        float: none;
+        margin-left: 0;
+    }
+
+    .samples img {
+        width: 100%;
+        margin-bottom: 10px;
+    }    
+    
+    .samples .sample .description {
+        top: 0;
+    }
+}
