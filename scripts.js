@@ -95,4 +95,9 @@ $(function() {
         
         return false;
     });
+
+    $('a.enquire').click(function() {
+        ga('send', 'event', 'Link', 'Click', 'Enquire');
+        return true;
+    });
 });
