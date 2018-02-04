@@ -78,9 +78,9 @@ a {
 }
 
 #logo {
-    width: 175px;
+    width: 190px;
     display: block;
-    margin: 0 auto 15px auto;
+    margin: 0 auto;
 }
 
 nav {
@@ -326,6 +326,23 @@ footer {
 
 .disable-orders .contact-details li:first-child {
     display: none;
+}
+
+@keyframes hovering {
+    75%  {
+        transform: translate(0px, 500px);
+    }
+}
+
+#logo:hover .picture {
+    animation-name: hovering;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+#logo {
+    fill: #555555;
 }
 
 @media screen and (max-width: 1550px) {
