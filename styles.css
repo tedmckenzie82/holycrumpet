@@ -155,6 +155,10 @@ section.odd, footer {
     margin-left: 3%;
 }
 
+.samples .last {
+    margin-bottom: 0;
+}
+
 img {
     width: 100%;
     border-radius: 10px;
@@ -366,10 +370,6 @@ footer {
         padding: 10px 5vw;
     }
     
-    section.top-level, footer.top-level {
-        padding: 20px 5vw;
-    }
-
     header.top-level {
         min-height: 100vh;
         display: flex;
