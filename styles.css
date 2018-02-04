@@ -370,7 +370,7 @@ footer {
         padding: 20px 5vw;
     }
 
-    header.top-level, section.top-level {
+    header.top-level {
         min-height: 100vh;
         display: flex;
         flex-direction: column;
